@@ -1,0 +1,309 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f1f8f4;
+  color: #26332c;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+header {
+  background: linear-gradient(to right, #08743c, #159b50);
+  color: white;
+  text-align: center;
+  padding: 18px;
+}
+
+header h1 {
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+header p {
+  font-size: 13px;
+}
+
+nav {
+  background: #064e36;
+  padding: 12px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #a7f3d0;
+}
+
+main {
+  width: 100%;
+  min-height: 75vh;
+}
+
+.hero {
+  background: #dff2e6;
+  text-align: center;
+  padding: 30px 15px;
+}
+
+.hero h2 {
+  color: #087f3d;
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.fresh-pick {
+  background: white;
+  width: 170px;
+  margin: auto;
+  padding: 10px;
+  border-radius: 12px;
+  box-shadow: 0 3px 8px #bbb;
+}
+
+.fresh-pick img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.fresh-pick h3 {
+  color: #087f3d;
+  margin-top: 8px;
+  font-size: 16px;
+}
+
+.hero p {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.products {
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.products h2 {
+  color: #087f3d;
+  margin-bottom: 18px;
+  font-size: 22px;
+}
+
+.search-box {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.search-box input {
+  width: 250px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.search-box button {
+  background: #087f3d;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cart-count {
+  color: #087f3d;
+  font-weight: bold;
+  margin-bottom: 18px;
+}
+
+.product-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.product-card {
+  background: white;
+  width: 190px;
+  padding: 12px;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px #bbb;
+  transition: transform 0.3s;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-card img {
+  width: 100%;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.product-card h3 {
+  color: #087f3d;
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.product-card p {
+  font-size: 13px;
+  margin: 8px 0;
+}
+
+.product-card .price {
+  font-weight: bold;
+}
+
+.product-card button {
+  background: #087f3d;
+  color: white;
+  border: none;
+  padding: 9px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-top: 8px;
+}
+
+.product-card button:hover,
+.search-box button:hover {
+  background: #065f32;
+}
+
+.registration {
+  background: #e1f3e8;
+  padding: 35px 15px;
+  min-height: 75vh;
+}
+
+.register-card {
+  background: white;
+  max-width: 480px;
+  margin: auto;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px #bbb;
+}
+
+.register-card h2 {
+  color: #087f3d;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.register-card > p {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-top: 14px;
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 11px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+input:focus,
+select:focus {
+  outline: 2px solid #86efac;
+  border-color: #087f3d;
+}
+
+small {
+  display: block;
+  color: #dc2626;
+  margin-top: 5px;
+  font-size: 12px;
+}
+
+.register-card button {
+  width: 100%;
+  background: #087f3d;
+  color: white;
+  padding: 13px;
+  border: none;
+  border-radius: 6px;
+  margin-top: 22px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.register-card button:disabled {
+  background: #94a3b8;
+  cursor: not-allowed;
+}
+
+.success {
+  color: #15803d;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 18px;
+}
+
+footer {
+  background: #064e36;
+  color: white;
+  text-align: center;
+  padding: 18px;
+  font-size: 13px;
+}
+
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 21px;
+  }
+
+  nav {
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+
+  .product-card {
+    width: 155px;
+  }
+
+  .product-card img {
+    height: 110px;
+  }
+
+  .register-card {
+    padding: 20px;
+  }
+
+  .search-box input {
+    width: 65%;
+  }
+}
